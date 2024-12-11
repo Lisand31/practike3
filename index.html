@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Store</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container">
+        <div class="nav-content">
+          <div class="logo">GameStore</div>
+          <div class="nav-links">
+            <a href id="#h1">Home</a>
+            <a href id="#heroi">Games</a>
+            <a href="#h3">Contact</a>
+          </div>
+          <button class="mobile-menu-btn">☰</button>
+        </div>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <img
+        src="https://cs12.pikabu.ru/post_img/big/2021/12/30/6/1640856483297298670.png"
+        alt="Hero background"
+        class="hero-bg"
+      />
+      <div class="hero-content">
+        <h1 id="h1">Epic Gaming Experience</h1>
+        <p>
+          Discover the most immersive and exciting games. Join millions of
+          players worldwide.
+        </p>
+        <button class="btn-primary">Explore Games</button>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="game-card">
+        <div class="game-slider">
+          <img
+            src="https://igroray.ru/upload/iblock/202/lotbkjhe90x30osqs4q61qqvs6i2c6mq/igra_call_of_duty_black_ops_6_ps5_russkaya_versiya.jpg"
+            alt="Game screenshot"
+            class="game-image"
+          />
+        </div>
+        <div class="game-info">
+          <div class="game-header">
+            <div>
+              <h2>COD black ops 6</h2>
+              <div class="rating">
+                ★★
+                <span>(2.5k reviews)</span>
+              </div>
+            </div>
+            <div class="price">
+              <div class="amount">$69.99</div>
+              <div class="edition">Digital Edition</div>
+            </div>
+          </div>
+          <button id="heroi" class="btn-purchase">Purchase game</button>
+        </div>
+      </section>
+
+      <section class="game-card">
+        <div class="game-slider">
+          <img
+            src="data:image/jpeg;base64,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"
+            alt="Game screenshot"
+            class="game-image">
+         
+        </div>
+        <div class="game-info">
+          <div class="game-header">
+            <div>
+              <h2>COD modern warfare 3</h2>
+              <div class="rating">
+                ★
+                <span>(2k reviews)</span>
+              </div>
+            </div>
+            <div class="price">
+              <div class="amount">$69.99</div>
+              <div class="edition">Digital Edition</div>
+            </div>
+          </div>
+          <button class="btn-purchase">Purchase game</button>
+        </div>
+      </section>
+
+      <section class="game-description">
+        <div class="description-content">
+          <h2>Game Description</h2>
+          <p>
+            Embark on an epic journey in Cyber Warriors, where you'll battle
+            through futuristic landscapes and face off against powerful
+            adversaries. With stunning graphics, immersive gameplay, and a rich
+            storyline, this game offers an unforgettable gaming experience.
+          </p>
+        </div>
+
+        <div class="features">
+          <div class="feature-card">
+            <div class="feature-icon">🛡️</div>
+            <h3>Secure Trading</h3>
+            <p>Safe and protected game item trading system</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">⚡</div>
+            <h3>Instant Delivery</h3>
+            <p>Get your purchases delivered instantly</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">👥</div>
+            <h3>Multiplayer</h3>
+            <p>Play with friends and compete globally</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🏆</div>
+            <h3>Achievements</h3>
+            <p>Earn rewards and showcase your progress</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <div class="logo">GameStore</div>
+            <p>
+              Your ultimate destination for gaming excitement and community.
+            </p>
+            <div class="social-links">
+              <a href="#">📘</a>
+              <a href="#">🐦</a>
+              <a href="#">📸</a>
+              <a href="#">▶️</a>
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <div class="link-group">
+              <h3 id="h3">Company</h3>
+              <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">News</a></li>
+              </ul>
+            </div>
+            <div class="link-group">
+              <h3>Support</h3>
+              <ul>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Safety</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Privacy</a></li>
+              </ul>
+            </div>
+            <div class="link-group">
+              <h3>Resources</h3>
+              <ul>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Newsletter</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Help</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2024 GameStore. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+  <script src="script copy.js"></script>
+  <script src="script copy 2.js"></script>
+</html>
